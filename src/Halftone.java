@@ -37,7 +37,7 @@ public class Halftone {
 		}
 
 		// Convert image with smaller dimensions
-		tmp = scale(5, tmp);
+		tmp = scale(gridSize/2, tmp);
 
 		try { // output the halftone
 			ImageIO.write(makeHalftone(tmp, gridSize), "png", new File(outfile));
